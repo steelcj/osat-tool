@@ -134,10 +134,17 @@ It's working on Linux 6.x.x
 
 ## 5. Commit and tag
 
-The initial commit message for this release:
+### Initial commit example
 
-```text
-feat: initial release v0.1.0
+```bash
+cd ~/bin/osat-tool
+```
+
+add and commit
+
+```bash
+git add .
+git commit -m "feat: initial release v0.1.0
 
 OS-agnostic tool pattern reference implementation. Installs a cross-platform
 Python script that detects and prints the current OS name, release, version,
@@ -153,17 +160,42 @@ Implements the pattern documented in:
 tool-installation-pattern--versioned-local-binaries-and-wrappers-v0.2.0.md
 
 Tested on: Linux x86_64 (Debian 13)
-Pending test: macOS, Windows 11
+Pending test: macOS, Windows 11"
 ```
 
-Tag annotation for `v0.1.0`:
+### The initial version tag
 
-```text
-v0.1.0 — Initial release
+```bash
+git tag -a v0.1.0 -m "v0.1.0 — Initial release
 
 OS-agnostic tool pattern reference implementation.
-See docs/ for installation walkthrough (forthcoming).
+See docs/ for installation walkthrough (forthcoming)."
 ```
+
+Ensure for our remote and push:
+
+```bash
+git remote add origin git@github.com:steelcj/osat-tool.git
+git push -u origin main --follow-tags
+```
+
+Output example:
+
+```bash
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (18/18), 10.54 KiB | 5.27 MiB/s, done.
+Total 18 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:steelcj/osat-tool.git
+ * [new branch]      main -> main
+ * [new tag]         v0.1.0 -> v0.1.0
+branch 'main' set up to track 'origin/main'.
+
+```
+
+
 
 ---
 
