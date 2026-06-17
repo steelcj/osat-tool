@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# osat — wrapper managed by osat-tool.
+# Points to the currently active version. To update, rerun install-osat.py.
+# Do not edit the rendered copy at ~/bin/osat by hand.
+exec python3 "$HOME/bin/osat-tool/__OSAT_VERSION__/osat.py" "$@"
