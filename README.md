@@ -64,6 +64,18 @@ Installed versions are kept side by side under `~/bin/osat-tool/<version>/`. To 
 
 Versioned directories are excluded from git by `.gitignore`.
 
+## Creating Custom OS Agnostic Installers
+
+Using similar patterns you can create your own OSAT installers. Any tools for doing this will be collected in this repository
+
+Example:
+
+create-repo-dirs.py can be modified so you can pass your tool name and build the structure for a custom osat tool installerS
+
+
+
+
+
 ## Platform support
 
 | Platform | Wrapper | Status |
