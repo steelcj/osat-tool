@@ -66,6 +66,10 @@ Versioned directories are excluded from git by `.gitignore`.
 
 ## Creating Custom OS Agnostic Installers
 
+### Reference Docs
+
+See `en/docs` for addition information on [software-installation-archetypes](./en/docs/software-installation-archetypes.md) as well as some examples on other approaches to OS Agnostic installers in the wild.
+
 Using similar patterns you can create your own OSAT installers. Any tools for doing this will be collected in this repository
 
 Example:
